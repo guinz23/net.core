@@ -1,0 +1,61 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Listado de carreras de la UTN</title>
+</head>
+<link href="~/css/main.css" rel="stylesheet" />
+<body style="background-image:url(https://potatosandwich.files.wordpress.com/2011/01/buffet.jpg); background-size:cover">
+    <nav class="nav-container">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">SERVICE JG </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Home</a></li>
+                <li><a href="badges.html">Contact</a></li>
+                <li><a href="collapsible.html">Imformation</a></li>
+               
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">Home</a></li>
+                <li><a href="badges.html">Contact</a></li>
+                <li><a href="collapsible.html">Imformation</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel carousel-slider center" data-indicators="true">
+        <div class="carousel-fixed-item cente">
+            <a class="btn waves-effect white grey-text darken-text-2" href="carreras" style="color:black">Lista de Servicios</a>
+        </div>
+        <div class="carousel-item red white-text" href="#one!" style="background-image:url(http://squarecatering.com.au/wp-content/uploads/2017/06/What-to-Look-Out-for-in-Corporate-Catering-Service.jpg); background-size:cover">
+
+            <h2>Catering Service</h2>
+            <p class="white-text"></p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!"  style="background-image:url(http://eatstreet55.com/wp-content/uploads/2010/03/PCP_Image_Homepage.jpg); background-size:cover">
+            <h2>Personal Chef</h2>
+            <p class="white-text"></p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!" style="background-image:url(http://www.blog.cotizaycontrata.com/wp-content/uploads/2015/10/meseross.jpg); background-size:cover">
+            <h2>Waiters</h2>
+            <p class="white-text"></p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!"  style="background-image:url(http://www.mexicancaribbean.com/photos/cancun-limousine/cancun-limousine.jpg); background-size:cover">
+            <h2>
+                milosina service
+            </h2>
+            <p class="white-text"></p>
+           
+        </div>
+    </div>
+    
+    <script>
+        $(".button-collapse").sideNav();
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+    </script>
+
+</body>
+</html>
